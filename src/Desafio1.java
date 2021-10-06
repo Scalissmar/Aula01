@@ -20,16 +20,13 @@ public class Desafio1
 		
 		if ( "Yes" .equalsIgnoreCase(ans) ) 
 		{
-			System.out.println("OTIMO");
-			System.out.println("Digite o valor: ");
+			System.out.println("OTIMO, voce disse " + ans);
+			System.out.println("Digite o valor desejado : ");
 			Scanner leitor1 = new Scanner(System.in);
 			int money = leitor1.nextInt();
-			double conver = money * 5.65;
+			double conver = (double)money * 5;
 			System.out.println("Voce doou " + conver + " em BRL");
-			//leitor1.close();
-			
-			
-			
+			leitor1.close();		
 		} 
 		else 
 		{
